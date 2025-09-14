@@ -4,6 +4,7 @@ A lightweight FastAPI service that predicts facial emotions from an image path o
 
 Classes: angry, disgust, fear, happy, sad, surprise, neutral
 Trained on: FER2013
+Model file used: best_fer_model.pth (result of training the model on FER2013)
 
 Features
 
@@ -16,3 +17,5 @@ DropPath & Dropout regularization.
 Test-time augmentation (random horizontal flips).
 
 CUDA optional (falls back to CPU).
+
+Loads and serves predictions using the trained .pth checkpoint.
